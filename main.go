@@ -13,8 +13,8 @@ import "math"
 func main() {
   fmt.Println("\nCalculate your BMI\n")
 
-  weight := get("weight")
-  length := get("length")
+  weight := get("weight (kg)")
+  length := get("length (cm)")
 
   fmt.Printf("\nYour BMI: %.2f kg/m² \n\n", weight / math.Pow(length/100, 2));
 }
